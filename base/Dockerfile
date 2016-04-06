@@ -21,8 +21,8 @@ RUN sudo apt-get install ttf-mscorefonts-installer  fontconfig -yy && \
 RUN sudo apt-get install ruby-full -yy && \
     sudo gem install sass
 
-## Install grunt and bower
-RUN npm install -d grunt-cli bower -g
+## Install cli
+RUN npm install -d grunt-cli gulp-cli bower -g
 
 ## Install cnpm
 # RUN npm install -g -d cnpm --registry=https://registry.npm.taobao.org

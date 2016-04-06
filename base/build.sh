@@ -14,7 +14,7 @@ CIT_ID=`cd $baseDir && git log --pretty=format:'%h' -n 1` # short version
 
 # main 
 [ -z "${BASH_SOURCE[0]}" -o "${BASH_SOURCE[0]}" = "$0" ] || return
-cd $baseDir/../..
+cd $baseDir
 
 eval "$(docker-machine env docker-default)"
 
